@@ -40,6 +40,15 @@ h1, h2, h3 {
     color: white;
 }
 
+.alert-notice {
+    display: none;
+}
+
+.home-signup-links {
+    margin-top: 30px;
+}
+
+
 // Nav Styles
 .navbar {
     border: none;
@@ -70,7 +79,4 @@ h1, h2, h3 {
     }
 }
 
-.alert-notice {
-    display: none;
-}
 
