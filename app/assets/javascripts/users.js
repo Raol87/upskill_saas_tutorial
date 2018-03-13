@@ -2,7 +2,7 @@
 //Document ready.
 $(document).on('turbolinks:load', function(){
     var theForm = $('#pro_form');
-    var submitBtn = $('#form-submit-btn');
+    var submitBtn = $('#form-signup-btn');
     
     //Set Stripe public key.
     Stripe.setPublishableKey( $('meta[name="stripe-key"]').attr('content') );
@@ -35,7 +35,7 @@ $(document).on('turbolinks:load', function(){
         }
         
         //Validate expiration date.
-        if(!Stripe.card.validateCVC(expMonth, expYear)) {
+        if(!Stripe.card.validateExpiry(expMonth, expYear)) {
             error = true;
             alert('The expiration date appears to be invalid');
         }
